@@ -112,3 +112,4 @@ export const VenueFaqSection: React.FC = () => {
     </section>
   );
 };
+
