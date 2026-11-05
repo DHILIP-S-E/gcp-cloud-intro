@@ -151,22 +151,23 @@ export const KalashVector: React.FC<{
   );
 };
 
-// 7. OpenmadurAI Community Badge using Vector Graphic Image (.svg)
-export const OpenmadurAIBadge: React.FC<{
+// 7. Official OpenmadurAI Community Logo (Utilizing the provided openmadurai-logo.png asset)
+export const OpenmadurAILogo: React.FC<{
   size?: number;
   className?: string;
-}> = ({ size = 200, className = '' }) => {
+}> = ({ size = 180, className = '' }) => {
   return (
-    <div
-      className={`relative inline-block select-none ${className}`}
-      style={{ width: size, height: size * 0.3 }}
-    >
+    <div className={`relative inline-flex items-center justify-center select-none ${className}`}>
       <img
-        src="/assets/vectors/openmadurai-badge.svg"
-        alt="OpenmadurAI Community Vector Emblem"
-        className="w-full h-full object-contain"
-        loading="lazy"
+        src="/openmadurai-logo.png"
+        alt="OpenmadurAI Community Official Logo"
+        style={{ width: size, height: 'auto', maxHeight: size * 0.8 }}
+        className="object-contain drop-shadow-md rounded-lg"
+        loading="eager"
       />
     </div>
   );
 };
+
+// Backward-compatible alias
+export const OpenmadurAIBadge = OpenmadurAILogo;
