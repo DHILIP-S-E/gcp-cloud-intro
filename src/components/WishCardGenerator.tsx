@@ -62,7 +62,7 @@ export const WishCardGenerator: React.FC = () => {
               </label>
               <input
                 type="text"
-                placeholder="e.g. Priyadharshini / Amma & Appa / Dev Team"
+                placeholder="e.g. Mentor / Dev Peer / Our Team"
                 value={recipientName}
                 onChange={(e) => setRecipientName(e.target.value)}
                 className="w-full px-4 py-3 rounded-xl border border-[#D97706]/35 bg-[#FFFDF7] text-[#2A1B12] placeholder-[#2A1B12]/40 text-sm focus:outline-none focus:border-[#D97706] focus:ring-1 focus:ring-[#D97706]"
@@ -75,7 +75,7 @@ export const WishCardGenerator: React.FC = () => {
               </label>
               <input
                 type="text"
-                placeholder="e.g. Karthik / OpenmadurAI Builder"
+                placeholder="e.g. Community Builder / Fellow Engineer"
                 value={senderName}
                 onChange={(e) => setSenderName(e.target.value)}
                 className="w-full px-4 py-3 rounded-xl border border-[#D97706]/35 bg-[#FFFDF7] text-[#2A1B12] placeholder-[#2A1B12]/40 text-sm focus:outline-none focus:border-[#D97706] focus:ring-1 focus:ring-[#D97706]"

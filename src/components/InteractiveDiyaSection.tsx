@@ -16,40 +16,40 @@ interface CommunityLight {
 const INITIAL_COMMUNITY_LIGHTS: CommunityLight[] = [
   {
     id: 'seed-1',
-    name: 'Dhilip S.E.',
-    collegeOrRole: 'GDG Madurai & OpenmadurAI',
+    name: 'AI Research Fellow',
+    collegeOrRole: 'Vernacular AI Circle',
     resolution: 'Empower 1,000+ engineers from South Tamil Nadu to build world-class AI on Cloud.',
     timestamp: 'Just now',
     flameColor: '#FF9D36',
   },
   {
     id: 'seed-2',
-    name: 'Anitha Sundaram',
-    collegeOrRole: 'KLN College of Engineering',
+    name: 'Cloud Aspirant',
+    collegeOrRole: 'GCP Builder Group',
     resolution: 'First engineer in my family. Dedicating this year to crack my remote GCP Cloud Architect role.',
     timestamp: '10 mins ago',
     flameColor: '#F5C76B',
   },
   {
     id: 'seed-3',
-    name: 'Selva Kumar',
-    collegeOrRole: 'TCE Madurai Alum',
-    resolution: 'Ship our open-source vernacular Tamil medical chatbot to help rural clinics.',
+    name: 'Open Source Contributor',
+    collegeOrRole: 'Madurai Dev Collective',
+    resolution: 'Ship our open-source vernacular Tamil healthcare assistant to help rural clinics.',
     timestamp: '25 mins ago',
     flameColor: '#FF9D36',
   },
   {
     id: 'seed-4',
-    name: 'Priya & Kaviya',
-    collegeOrRole: 'Thiagarajar School of Management',
-    resolution: 'Build an AI product that helps Madurai jasmine and cotton weavers find fair global prices.',
+    name: 'Student Developers',
+    collegeOrRole: 'Local Tech Circle',
+    resolution: 'Build an AI tool that helps local artisans and weavers discover fair global markets.',
     timestamp: '1 hour ago',
     flameColor: '#F5C76B',
   },
   {
     id: 'seed-5',
-    name: 'Vigneshwaran',
-    collegeOrRole: 'Self-Taught Python Builder',
+    name: 'Self-Taught Builder',
+    collegeOrRole: 'Independent Creator',
     resolution: 'Prove that you don’t need a fancy metro pin code to build models that serve millions.',
     timestamp: '2 hours ago',
     flameColor: '#FF9D36',
@@ -171,12 +171,12 @@ export const InteractiveDiyaSection: React.FC = () => {
             <form onSubmit={handleDedicateLight} className="space-y-4">
               <div>
                 <label className="block text-xs font-bold uppercase tracking-wider text-[#78350F] mb-1.5">
-                  Your Name *
+                  Your Name / Handle *
                 </label>
                 <input
                   type="text"
                   required
-                  placeholder="e.g. Dhilip / Anitha / Karthik"
+                  placeholder="e.g. Fellow Builder / Student / Developer"
                   value={userName}
                   onChange={(e) => setUserName(e.target.value)}
                   className="w-full px-4 py-2.5 rounded-xl border border-[#D97706]/35 bg-[#FFFDF7] text-[#2A1B12] placeholder-[#2A1B12]/40 text-sm focus:outline-none focus:border-[#D97706] focus:ring-1 focus:ring-[#D97706]"
@@ -185,11 +185,11 @@ export const InteractiveDiyaSection: React.FC = () => {
 
               <div>
                 <label className="block text-xs font-bold uppercase tracking-wider text-[#78350F] mb-1.5">
-                  College / Role / City
+                  Domain / Focus Area
                 </label>
                 <input
                   type="text"
-                  placeholder="e.g. TCE Madurai / KLN / Self-Taught Dev"
+                  placeholder="e.g. AI Enthusiast / Cloud Builder / Independent Dev"
                   value={userRole}
                   onChange={(e) => setUserRole(e.target.value)}
                   className="w-full px-4 py-2.5 rounded-xl border border-[#D97706]/35 bg-[#FFFDF7] text-[#2A1B12] placeholder-[#2A1B12]/40 text-sm focus:outline-none focus:border-[#D97706] focus:ring-1 focus:ring-[#D97706]"
