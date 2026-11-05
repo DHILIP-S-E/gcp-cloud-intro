@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { DiyaVector, MeenakshiGopuramVector, KalashVector } from './VectorGraphics';
 import { Copy, Check, Sparkles, MessageCircle } from 'lucide-react';
 import { soundEngine } from '../utils/soundEngine';
 
@@ -38,27 +37,27 @@ export const WishCardGenerator: React.FC = () => {
   };
 
   return (
-    <section id="wish-generator" className="relative py-24 px-4 overflow-hidden bg-[#090A12] border-t border-[#F5C76B]/15">
+    <section id="wish-generator" className="relative py-24 px-4 overflow-hidden bg-[#FFFDF7] border-t border-[#F5C76B]/30">
       <div className="relative z-10 max-w-5xl mx-auto">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#F5C76B]/30 bg-[#111629]/90 text-xs font-semibold uppercase tracking-wider text-[#F5C76B] mb-3">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#D97706]/40 bg-[#FFF2D6] text-xs font-bold uppercase tracking-wider text-[#B45309] mb-3 shadow-sm">
             <Sparkles className="w-3.5 h-3.5" />
             <span>Digital Greeting Maker</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black font-festive text-transparent bg-clip-text bg-gradient-to-r from-[#FFFBEB] via-[#F5C76B] to-[#FF9D36]">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black font-festive text-transparent bg-clip-text bg-gradient-to-r from-[#991B1B] via-[#D97706] to-[#B45309]">
             Craft Your Diwali Tech Wish
           </h2>
-          <p className="text-sm sm:text-base text-[#FFF1D6]/80 font-serif italic mt-3">
-            Personalize an auspicious festive card adorned with Madurai heritage & Diwali vector art, then share it instantly.
+          <p className="text-sm sm:text-base text-[#6B4E3D] font-serif italic mt-3">
+            Personalize an auspicious festive card adorned with Madurai heritage & Diwali 2D graphics, then share it instantly.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           {/* Controls Form */}
-          <div className="lg:col-span-5 p-6 rounded-3xl border border-[#F5C76B]/25 bg-[#111629]/70 backdrop-blur-md space-y-5">
+          <div className="lg:col-span-5 p-6 rounded-3xl border border-[#D97706]/35 bg-white shadow-xl space-y-5">
             <div>
-              <label className="block text-xs font-semibold uppercase tracking-wider text-[#F5C76B] mb-2">
+              <label className="block text-xs font-bold uppercase tracking-wider text-[#B45309] mb-2">
                 Recipient's Name
               </label>
               <input
@@ -66,12 +65,12 @@ export const WishCardGenerator: React.FC = () => {
                 placeholder="e.g. Priyadharshini / Dev Team"
                 value={recipientName}
                 onChange={(e) => setRecipientName(e.target.value)}
-                className="w-full px-4 py-3 rounded-xl border border-[#F5C76B]/30 bg-[#090A12]/80 text-[#FFF1D6] placeholder-[#FFF1D6]/30 text-sm focus:outline-none focus:border-[#F5C76B] focus:ring-1 focus:ring-[#F5C76B]"
+                className="w-full px-4 py-3 rounded-xl border border-[#D97706]/35 bg-[#FFFDF7] text-[#2A1B12] placeholder-[#2A1B12]/40 text-sm focus:outline-none focus:border-[#D97706] focus:ring-1 focus:ring-[#D97706]"
               />
             </div>
 
             <div>
-              <label className="block text-xs font-semibold uppercase tracking-wider text-[#F5C76B] mb-2">
+              <label className="block text-xs font-bold uppercase tracking-wider text-[#B45309] mb-2">
                 Your Name / Sign-off
               </label>
               <input
@@ -79,12 +78,12 @@ export const WishCardGenerator: React.FC = () => {
                 placeholder="e.g. Karthik / OpenmadurAI Fellow"
                 value={senderName}
                 onChange={(e) => setSenderName(e.target.value)}
-                className="w-full px-4 py-3 rounded-xl border border-[#F5C76B]/30 bg-[#090A12]/80 text-[#FFF1D6] placeholder-[#FFF1D6]/30 text-sm focus:outline-none focus:border-[#F5C76B] focus:ring-1 focus:ring-[#F5C76B]"
+                className="w-full px-4 py-3 rounded-xl border border-[#D97706]/35 bg-[#FFFDF7] text-[#2A1B12] placeholder-[#2A1B12]/40 text-sm focus:outline-none focus:border-[#D97706] focus:ring-1 focus:ring-[#D97706]"
               />
             </div>
 
             <div>
-              <label className="block text-xs font-semibold uppercase tracking-wider text-[#F5C76B] mb-2">
+              <label className="block text-xs font-bold uppercase tracking-wider text-[#B45309] mb-2">
                 Choose a Blessing
               </label>
               <div className="space-y-2">
@@ -97,8 +96,8 @@ export const WishCardGenerator: React.FC = () => {
                     }}
                     className={`w-full text-left p-3 rounded-xl text-xs transition-all border ${
                       selectedWishIndex === index
-                        ? 'border-[#F5C76B] bg-[#F5C76B]/15 text-[#FFF1D6] font-medium shadow-[0_0_15px_rgba(245,199,107,0.15)]'
-                        : 'border-[#F5C76B]/15 bg-[#090A12]/50 text-[#FFF1D6]/70 hover:border-[#F5C76B]/40 hover:text-[#FFF1D6]'
+                        ? 'border-[#D97706] bg-[#FFF2D6] text-[#78350F] font-bold shadow-sm'
+                        : 'border-[#D97706]/20 bg-[#FFFDF7] text-[#5C4A3E] hover:border-[#D97706]/40'
                     }`}
                   >
                     "{wish}"
@@ -117,60 +116,81 @@ export const WishCardGenerator: React.FC = () => {
               </button>
               <button
                 onClick={handleCopyWish}
-                className="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl border border-[#F5C76B]/40 bg-[#161D36] text-[#FFF1D6] font-bold text-xs uppercase tracking-wider hover:bg-[#F5C76B] hover:text-[#090A12] hover:scale-[1.02] active:scale-95 transition-all cursor-pointer"
+                className="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl border border-[#D97706]/40 bg-[#FFF7E8] text-[#78350F] font-bold text-xs uppercase tracking-wider hover:bg-[#D97706] hover:text-white hover:scale-[1.02] active:scale-95 transition-all cursor-pointer"
               >
-                {copied ? <Check className="w-4 h-4 text-green-400" /> : <Copy className="w-4 h-4" />}
+                {copied ? <Check className="w-4 h-4 text-green-600" /> : <Copy className="w-4 h-4" />}
                 <span>{copied ? 'Copied!' : 'Copy Wish'}</span>
               </button>
             </div>
           </div>
 
-          {/* Real-time Festive Card Preview */}
+          {/* Real-time Festive Card Preview using 2D Graphic Image Assets */}
           <div className="lg:col-span-7">
             <motion.div
               layout
-              className="relative p-8 sm:p-10 rounded-3xl border-2 border-[#F5C76B]/40 bg-gradient-to-br from-[#12162B] via-[#0D101E] to-[#1A1226] shadow-[0_0_50px_rgba(245,199,107,0.15)] overflow-hidden"
+              className="relative p-8 sm:p-10 rounded-3xl border-2 border-[#D97706]/40 bg-gradient-to-br from-[#FFF9EE] via-[#FFFDF7] to-[#FFF3DC] shadow-[0_12px_45px_rgba(217,119,6,0.18)] overflow-hidden"
             >
-              {/* Corner Traditional Decorative Motifs */}
-              <div className="absolute top-3 left-4 opacity-75">
-                <MeenakshiGopuramVector size={50} />
-              </div>
-              <div className="absolute top-3 right-4 opacity-75">
-                <KalashVector size={45} />
+              {/* Madurai Temple Gopuram 2D Image Accent on Card */}
+              <div className="absolute top-4 left-5 h-16 w-16 rounded-xl overflow-hidden border border-[#F5C76B]/40 shadow-sm opacity-90">
+                <img
+                  src="/assets/images/gopuram-diwali.jpg"
+                  alt="Madurai Meenakshi Gopuram 2D Asset"
+                  className="w-full h-full object-cover"
+                />
               </div>
 
               {/* Watermark Heritage Silhouette */}
-              <div className="absolute right-0 bottom-0 opacity-10 pointer-events-none">
-                <MeenakshiGopuramVector size={220} />
+              <div className="absolute right-0 bottom-0 opacity-15 pointer-events-none w-48 h-48 overflow-hidden">
+                <img
+                  src="/assets/images/gopuram-diwali.jpg"
+                  alt="Watermark"
+                  className="w-full h-full object-cover mix-blend-multiply"
+                />
               </div>
 
               {/* Content Inside Greeting Card */}
               <div className="relative z-10 flex flex-col items-center text-center pt-8 pb-4">
-                <DiyaVector size={90} isLit={true} flameScale={1.1} />
+                {/* Official OpenmadurAI Logo & Central Diya Image on Card */}
+                <div className="flex items-center gap-4 mb-3">
+                  <div className="h-12 w-12 rounded-xl overflow-hidden bg-white p-1 shadow border border-[#F5C76B]/50">
+                    <img
+                      src="/openmadurai-logo.png"
+                      alt="OpenmadurAI Logo"
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                  <div className="h-14 w-14 rounded-full overflow-hidden shadow-md border-2 border-[#F5C76B]">
+                    <img
+                      src="/assets/images/diwali-diya-hero.jpg"
+                      alt="Diya 2D Graphic Asset"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
 
-                <span className="text-[11px] font-semibold uppercase tracking-widest text-[#F5C76B] mt-4">
+                <span className="text-[11px] font-bold uppercase tracking-widest text-[#B45309]">
                   OpenmadurAI × GDG Madurai
                 </span>
 
-                <h3 className="text-2xl sm:text-3xl font-black font-festive text-transparent bg-clip-text bg-gradient-to-r from-[#FFFBEB] via-[#F5C76B] to-[#FF9D36] mt-1 mb-4">
+                <h3 className="text-2xl sm:text-3xl font-black font-festive text-transparent bg-clip-text bg-gradient-to-r from-[#991B1B] via-[#D97706] to-[#B45309] mt-1 mb-3">
                   Happy Deepavali 2026
                 </h3>
 
                 {recipientName.trim() && (
-                  <p className="text-sm font-semibold text-[#F5C76B] font-festive mb-2">
+                  <p className="text-sm font-bold text-[#B45309] font-festive mb-2">
                     Dearest {recipientName.trim()},
                   </p>
                 )}
 
-                <p className="text-sm sm:text-base text-[#FFF1D6]/90 font-serif italic max-w-md leading-relaxed my-3 bg-[#090A12]/40 p-4 rounded-2xl border border-[#F5C76B]/20">
+                <p className="text-sm sm:text-base text-[#2A1B12] font-serif italic max-w-md leading-relaxed my-3 bg-white/85 p-4 rounded-2xl border border-[#D97706]/20 shadow-sm">
                   "{FESTIVE_WISHES[selectedWishIndex]}"
                 </p>
 
-                <div className="mt-4 pt-3 border-t border-[#F5C76B]/20 w-full flex items-center justify-between text-xs text-[#FFF1D6]/60">
-                  <span className="font-serif italic">
+                <div className="mt-4 pt-3 border-t border-[#D97706]/20 w-full flex items-center justify-between text-xs text-[#78350F]/80">
+                  <span className="font-serif italic font-semibold">
                     {senderName.trim() ? `With love, ${senderName.trim()}` : 'With warm wishes, Tech Community'}
                   </span>
-                  <span className="text-[#F5C76B] font-semibold">Madurai • Tamil Nadu</span>
+                  <span className="text-[#B45309] font-bold">Madurai • Tamil Nadu</span>
                 </div>
               </div>
             </motion.div>
