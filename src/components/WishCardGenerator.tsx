@@ -4,10 +4,10 @@ import { Copy, Check, Sparkles, MessageCircle } from 'lucide-react';
 import { soundEngine } from '../utils/soundEngine';
 
 const FESTIVE_WISHES = [
-  "May your Diwali burn bright with success, innovation, clean code, and joyful algorithms!",
-  "Wishing you a Diwali loaded with sparkling ideas, boundless prosperity, and warm togetherness!",
-  "May the divine glow of Diwali Diyas illuminate your journey towards greatness, health, and happiness!",
-  "From Madurai to the world: Wishing you, your family, and team a grand, sparkling, and blessed Deepavali!",
+  "மதுரை மல்லிகைப் பூ மணமும், தீபத்தின் மங்கள ஒளியும் உங்கள் இல்லத்திலும் இதயத்திலும் எப்போதும் நிறையட்டும். இனிய தீபாவளி நல்வாழ்த்துகள்! 🪔",
+  "May your code compile on the first try, your models converge with grace, and your dreams light up this Diwali! Happy Deepavali from Madurai! ✨",
+  "அன்பும், அறிவும், விடாமுயற்சியும் உங்கள் வாழ்வில் என்றும் நிலைத்து பெருகட்டும். Happy Deepavali 2026!",
+  "From the sleepless streets of Madurai to wherever you are: Wishing you and your loved ones an illuminating, peaceful, and prosperous Diwali! 🪔",
 ];
 
 export const WishCardGenerator: React.FC = () => {
@@ -17,9 +17,9 @@ export const WishCardGenerator: React.FC = () => {
   const [copied, setCopied] = useState<boolean>(false);
 
   const getGreetingText = () => {
-    const to = recipientName.trim() ? `Dear ${recipientName.trim()}, ` : '';
-    const from = senderName.trim() ? ` — With warm wishes from ${senderName.trim()}` : ' — OpenmadurAI × GDG Madurai';
-    return `🪔 Happy Diwali 2026! ✨\n\n${to}${FESTIVE_WISHES[selectedWishIndex]}${from}\n\nCelebrate with us: ${window.location.href}`;
+    const to = recipientName.trim() ? `அன்புள்ள ${recipientName.trim()}, ` : '';
+    const from = senderName.trim() ? ` — அன்புடன் ${senderName.trim()}` : ' — OpenmadurAI × GDG Madurai';
+    return `🪔 இனிய தீபாவளி நல்வாழ்த்துகள் 2026! ✨\n\n${to}${FESTIVE_WISHES[selectedWishIndex]}${from}\n\nநம்ம ஊரு தீபாவளி கொண்டாட்டம்: ${window.location.href}`;
   };
 
   const handleCopyWish = () => {
@@ -43,13 +43,13 @@ export const WishCardGenerator: React.FC = () => {
         <div className="text-center max-w-3xl mx-auto mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#D97706]/40 bg-[#FFF2D6] text-xs font-bold uppercase tracking-wider text-[#B45309] mb-3 shadow-sm">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>Digital Greeting Maker</span>
+            <span>நல்வாழ்த்து அட்டை • Send a Personal Diwali Wish</span>
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black font-festive text-transparent bg-clip-text bg-gradient-to-r from-[#991B1B] via-[#D97706] to-[#B45309]">
-            Craft Your Diwali Tech Wish
+            Share Heartfelt Festival Wishes
           </h2>
           <p className="text-sm sm:text-base text-[#6B4E3D] font-serif italic mt-3">
-            Personalize an auspicious festive card adorned with Madurai heritage & Diwali 2D graphics, then share it instantly.
+            Personalize a festive card adorned with Madurai heritage & the warm glow of Diwali, then share it directly with your loved ones and dev peers.
           </p>
         </div>
 
@@ -58,11 +58,11 @@ export const WishCardGenerator: React.FC = () => {
           <div className="lg:col-span-5 p-6 rounded-3xl border border-[#D97706]/35 bg-white shadow-xl space-y-5">
             <div>
               <label className="block text-xs font-bold uppercase tracking-wider text-[#B45309] mb-2">
-                Recipient's Name
+                Recipient's Name (பெயர்)
               </label>
               <input
                 type="text"
-                placeholder="e.g. Priyadharshini / Dev Team"
+                placeholder="e.g. Priyadharshini / Amma & Appa / Dev Team"
                 value={recipientName}
                 onChange={(e) => setRecipientName(e.target.value)}
                 className="w-full px-4 py-3 rounded-xl border border-[#D97706]/35 bg-[#FFFDF7] text-[#2A1B12] placeholder-[#2A1B12]/40 text-sm focus:outline-none focus:border-[#D97706] focus:ring-1 focus:ring-[#D97706]"
@@ -71,11 +71,11 @@ export const WishCardGenerator: React.FC = () => {
 
             <div>
               <label className="block text-xs font-bold uppercase tracking-wider text-[#B45309] mb-2">
-                Your Name / Sign-off
+                Your Name / Sign-off (உங்கள் பெயர்)
               </label>
               <input
                 type="text"
-                placeholder="e.g. Karthik / OpenmadurAI Fellow"
+                placeholder="e.g. Karthik / OpenmadurAI Builder"
                 value={senderName}
                 onChange={(e) => setSenderName(e.target.value)}
                 className="w-full px-4 py-3 rounded-xl border border-[#D97706]/35 bg-[#FFFDF7] text-[#2A1B12] placeholder-[#2A1B12]/40 text-sm focus:outline-none focus:border-[#D97706] focus:ring-1 focus:ring-[#D97706]"
@@ -84,7 +84,7 @@ export const WishCardGenerator: React.FC = () => {
 
             <div>
               <label className="block text-xs font-bold uppercase tracking-wider text-[#B45309] mb-2">
-                Choose a Blessing
+                Choose a Heartfelt Blessing
               </label>
               <div className="space-y-2">
                 {FESTIVE_WISHES.map((wish, index) => (
@@ -112,7 +112,7 @@ export const WishCardGenerator: React.FC = () => {
                 className="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-gradient-to-r from-[#25D366] to-[#128C7E] text-white font-bold text-xs uppercase tracking-wider shadow-md hover:scale-[1.02] active:scale-95 transition-all cursor-pointer"
               >
                 <MessageCircle className="w-4 h-4" />
-                <span>WhatsApp</span>
+                <span>WhatsApp-ல் பகிர்</span>
               </button>
               <button
                 onClick={handleCopyWish}
@@ -124,7 +124,7 @@ export const WishCardGenerator: React.FC = () => {
             </div>
           </div>
 
-          {/* Real-time Festive Card Preview using 2D Graphic Image Assets */}
+          {/* Real-time Festive Card Preview */}
           <div className="lg:col-span-7">
             <motion.div
               layout
@@ -134,12 +134,12 @@ export const WishCardGenerator: React.FC = () => {
               <div className="absolute top-4 left-5 h-16 w-16 rounded-xl overflow-hidden border border-[#F5C76B]/40 shadow-sm opacity-90">
                 <img
                   src="/assets/images/gopuram-diwali.jpg"
-                  alt="Madurai Meenakshi Gopuram 2D Asset"
+                  alt="Madurai Meenakshi Gopuram"
                   className="w-full h-full object-cover"
                 />
               </div>
 
-              {/* Watermark Heritage Silhouette */}
+              {/* Watermark */}
               <div className="absolute right-0 bottom-0 opacity-15 pointer-events-none w-48 h-48 overflow-hidden">
                 <img
                   src="/assets/images/gopuram-diwali.jpg"
@@ -150,7 +150,6 @@ export const WishCardGenerator: React.FC = () => {
 
               {/* Content Inside Greeting Card */}
               <div className="relative z-10 flex flex-col items-center text-center pt-8 pb-4">
-                {/* Official OpenmadurAI Logo & Central Diya Image on Card */}
                 <div className="flex items-center gap-4 mb-3">
                   <div className="h-12 w-12 rounded-xl overflow-hidden bg-white p-1 shadow border border-[#F5C76B]/50">
                     <img
@@ -162,7 +161,7 @@ export const WishCardGenerator: React.FC = () => {
                   <div className="h-14 w-14 rounded-full overflow-hidden shadow-md border-2 border-[#F5C76B]">
                     <img
                       src="/assets/images/diwali-diya-hero.jpg"
-                      alt="Diya 2D Graphic Asset"
+                      alt="Diya Graphic Asset"
                       className="w-full h-full object-cover"
                     />
                   </div>
@@ -173,12 +172,12 @@ export const WishCardGenerator: React.FC = () => {
                 </span>
 
                 <h3 className="text-2xl sm:text-3xl font-black font-festive text-transparent bg-clip-text bg-gradient-to-r from-[#991B1B] via-[#D97706] to-[#B45309] mt-1 mb-3">
-                  Happy Deepavali 2026
+                  இனிய தீபாவளி நல்வாழ்த்துகள் 2026
                 </h3>
 
                 {recipientName.trim() && (
                   <p className="text-sm font-bold text-[#B45309] font-festive mb-2">
-                    Dearest {recipientName.trim()},
+                    அன்புள்ள {recipientName.trim()},
                   </p>
                 )}
 
@@ -188,9 +187,9 @@ export const WishCardGenerator: React.FC = () => {
 
                 <div className="mt-4 pt-3 border-t border-[#D97706]/20 w-full flex items-center justify-between text-xs text-[#78350F]/80">
                   <span className="font-serif italic font-semibold">
-                    {senderName.trim() ? `With love, ${senderName.trim()}` : 'With warm wishes, Tech Community'}
+                    {senderName.trim() ? `அன்புடன், ${senderName.trim()}` : 'With warm wishes, Tech Community'}
                   </span>
-                  <span className="text-[#B45309] font-bold">Madurai • Tamil Nadu</span>
+                  <span className="text-[#B45309] font-bold">மதுரை • தமிழ்நாடு</span>
                 </div>
               </div>
             </motion.div>

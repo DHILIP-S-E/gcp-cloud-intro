@@ -1,31 +1,22 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Sparkles, Terminal, Cpu, Users, ExternalLink } from 'lucide-react';
+import { Sparkles, Terminal, Cpu, Users, Heart, Coffee, Code2 } from 'lucide-react';
 
 export const CommunityMission: React.FC = () => {
   return (
     <section id="mission" className="relative py-24 px-4 overflow-hidden bg-gradient-to-b from-[#FFFDF7] via-[#FFF9EE] to-[#FFFDF7] border-t border-[#F5C76B]/30">
-      {/* Background Decorative Temple Image Accent */}
-      <div className="absolute -right-8 bottom-4 opacity-10 pointer-events-none hidden lg:block w-72 h-72 overflow-hidden rounded-full">
-        <img
-          src="/assets/images/gopuram-diwali.jpg"
-          alt="Madurai Meenakshi Temple 2D Graphic Asset"
-          className="w-full h-full object-cover mix-blend-multiply"
-        />
-      </div>
-
       <div className="relative z-10 max-w-5xl mx-auto">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#D97706]/40 bg-[#FFF2D6] text-xs font-bold uppercase tracking-wider text-[#B45309] mb-3 shadow-sm">
             <Users className="w-3.5 h-3.5" />
-            <span>Community Vision & Mission</span>
+            <span>எங்கள் கதை • The Builder's Manifesto</span>
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black font-festive text-transparent bg-clip-text bg-gradient-to-r from-[#991B1B] via-[#D97706] to-[#B45309]">
-            Heritage of Madurai Meets The Future of AI
+            Why We Build in Madurai
           </h2>
-          <p className="text-sm sm:text-base text-[#6B4E3D] font-serif italic mt-4 max-w-2xl mx-auto leading-relaxed">
-            From the thousand-pillared halls of Meenakshi Amman Temple to modern neural networks and distributed clouds — OpenmadurAI and GDG Madurai unite to empower every creator in Tamil Nadu.
+          <p className="text-sm sm:text-base text-[#5C4A3E] font-serif italic mt-4 max-w-2xl mx-auto leading-relaxed">
+            "They told us we had to leave our families and move to Bengaluru or Silicon Valley to build the future. We decided to stay, write code, and light the fire right here on Madurai soil."
           </p>
         </div>
 
@@ -34,20 +25,25 @@ export const CommunityMission: React.FC = () => {
           <div className="w-40 h-40 sm:w-48 sm:h-48 rounded-2xl overflow-hidden border-2 border-[#F5C76B] shadow-md flex-shrink-0">
             <img
               src="/assets/images/gopuram-diwali.jpg"
-              alt="Madurai Meenakshi Amman Gopuram 2D Game Graphic Asset"
+              alt="Madurai Meenakshi Amman Gopuram 2D Graphic Asset"
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="text-left">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FFF2D6] text-[11px] font-bold text-[#B45309] uppercase tracking-wider mb-2">
-              <span>🏛️ Temple City Ethos • 2D Graphic Asset</span>
+          <div className="text-left space-y-3">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FFF2D6] text-[11px] font-bold text-[#B45309] uppercase tracking-wider">
+              <span>🏛️ Vilakkuthoon & Meenakshi Amman Heritage</span>
             </div>
-            <h3 className="text-2xl font-bold font-festive text-[#991B1B] mb-2">
-              Anchored in Madurai's Rich Heritage
+            <h3 className="text-2xl font-bold font-festive text-[#991B1B]">
+              Madurai: The City of Sleepless Grit (தூங்கா நகரம்)
             </h3>
             <p className="text-sm text-[#5C4A3E] font-serif leading-relaxed">
-              Madurai has been a cradle of knowledge, literature, and art for millennia. This Diwali, we bridge ancient craftsmanship with cutting-edge artificial intelligence, machine learning, and cloud computing.
+              For 2,500 years, Madurai was the capital of Tamil Sangam poetry, craft, and fearless trade. Today, that exact same relentless energy fuels our hackathon rooms, open-source AI repos, and cloud deployments.
             </p>
+            <div className="flex flex-wrap items-center gap-4 text-xs font-bold text-[#78350F] pt-1">
+              <span className="flex items-center gap-1.5"><Coffee className="w-3.5 h-3.5 text-[#D97706]" /> 2 AM Filter Coffee & Debugging</span>
+              <span className="flex items-center gap-1.5"><Heart className="w-3.5 h-3.5 text-[#C73532]" /> 100% Grassroots Community</span>
+              <span className="flex items-center gap-1.5"><Code2 className="w-3.5 h-3.5 text-[#0284C7]" /> Zero Corporate Gatekeeping</span>
+            </div>
           </div>
         </div>
 
@@ -76,29 +72,29 @@ export const CommunityMission: React.FC = () => {
                   OpenmadurAI
                 </h3>
                 <span className="text-xs px-2.5 py-0.5 rounded-full bg-[#0284C7]/15 text-[#0369A1] font-sans font-bold">
-                  AI & Open Source Research
+                  AI for the People • தமிழ் AI
                 </span>
               </div>
             </div>
 
             <p className="text-sm text-[#5C4A3E] leading-relaxed font-sans mb-6">
-              Madurai's grassroots artificial intelligence collective dedicated to open weights, generative AI research, vernacular LLM applications, and nurturing deep tech talent in South Tamil Nadu.
+              Madurai's homegrown artificial intelligence brotherhood. We believe AI shouldn't just be proprietary tools for elite metros — we democratize open weights, vernacular Tamil language models, and train young minds across Tier-2 towns.
             </p>
 
             <ul className="text-xs text-[#5C4A3E] space-y-2 mb-6 font-mono font-medium">
               <li className="flex items-center gap-2">
-                <span className="text-[#0284C7]">✦</span> Vernacular AI & Tamil NLP initiatives
+                <span className="text-[#0284C7]">✦</span> Open Weights & Vernacular Tamil LLM research
               </li>
               <li className="flex items-center gap-2">
-                <span className="text-[#0284C7]">✦</span> Hands-on Machine Learning bootcamps
+                <span className="text-[#0284C7]">✦</span> Free AI workshops for college students across Madurai
               </li>
               <li className="flex items-center gap-2">
-                <span className="text-[#0284C7]">✦</span> Open-source AI hackathons & paper reading clubs
+                <span className="text-[#0284C7]">✦</span> Grassroots hackathons with real village-level impact
               </li>
             </ul>
 
             <div className="pt-4 border-t border-[#0284C7]/20 flex items-center justify-between text-xs text-[#0369A1]">
-              <span className="font-bold">Building Madurai's AI Valley</span>
+              <span className="font-bold">Building South Tamil Nadu's AI Frontier</span>
               <Sparkles className="w-4 h-4" />
             </div>
           </motion.div>
@@ -125,52 +121,52 @@ export const CommunityMission: React.FC = () => {
                   GDG Madurai
                 </h3>
                 <span className="text-xs px-2.5 py-0.5 rounded-full bg-[#EA4335]/15 text-[#C5221F] font-sans font-bold">
-                  Google Developer Group
+                  Google Developer Community
                 </span>
               </div>
             </div>
 
             <p className="text-sm text-[#5C4A3E] leading-relaxed font-sans mb-6">
-              Google Developer Group Madurai brings together developers, cloud engineers, Android builders, and web architects to learn, share, and solve community challenges with Google technologies.
+              Google Developer Group Madurai bridges local students and self-taught engineers directly with Google Cloud Platform, Gemini, and modern distributed systems. No degree gatekeeping — only code, passion, and mentorship.
             </p>
 
             <ul className="text-xs text-[#5C4A3E] space-y-2 mb-6 font-mono font-medium">
               <li className="flex items-center gap-2">
-                <span className="text-[#4285F4]">✦</span> Google Cloud Platform & Gemini workshops
+                <span className="text-[#4285F4]">✦</span> GCP Cloud & Gemini AI hands-on bootcamps
               </li>
               <li className="flex items-center gap-2">
                 <span className="text-[#34A853]">✦</span> DevFest Madurai & Google I/O Extended
               </li>
               <li className="flex items-center gap-2">
-                <span className="text-[#FBBC04]">✦</span> Student developer community mentorship
+                <span className="text-[#FBBC04]">✦</span> Peer-to-peer developer interview preparation
               </li>
             </ul>
 
             <div className="pt-4 border-t border-[#EA4335]/20 flex items-center justify-between text-xs text-[#C5221F]">
-              <span className="font-bold">Empowering Madurai Developers</span>
-              <ExternalLink className="w-4 h-4" />
+              <span className="font-bold">Bridging Madurai to Global Tech</span>
+              <Terminal className="w-4 h-4" />
             </div>
           </motion.div>
         </div>
 
-        {/* The Union Callout Banner */}
-        <div className="p-8 rounded-3xl border border-[#D97706]/40 bg-gradient-to-r from-[#FFF2D6] via-[#FFF9EE] to-[#FFF2D6] text-center shadow-lg relative overflow-hidden">
+        {/* The Brotherly Union Banner */}
+        <div className="p-8 rounded-3xl border-2 border-[#D97706]/40 bg-gradient-to-r from-[#FFF2D6] via-[#FFF9EE] to-[#FFF2D6] text-center shadow-lg relative overflow-hidden">
           <div className="relative z-10 max-w-2xl mx-auto">
             <h4 className="text-2xl font-bold font-festive text-[#991B1B] mb-3">
-              One Mission: Radiance Through Knowledge
+              ஒற்றுமையே பலம் • Together We Rise
             </h4>
             <p className="text-sm text-[#5C4A3E] font-serif italic leading-relaxed mb-6">
-              "Just as a single diya can light hundreds of other lamps without losing its brilliance, sharing technology, skills, and kindness elevates our entire ecosystem."
+              "ஒரு தீபத்திலிருந்து பல தீபங்களை ஏற்றுவது போல — அறிவையும், அன்பையும், தொழில்நுட்பத்தையும் நாம் பகிர்ந்து கொள்ளும்போது, மதுரை மண்ணின் ஒவ்வொரு இளைஞனும் சாதனையாளன் ஆகிறான்."
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4 text-xs font-bold tracking-wider uppercase text-[#2A1B12]">
               <span className="px-4 py-2 rounded-full bg-white border border-[#D97706]/30 shadow-sm">
-                🚀 Upcoming DevFest 2026
+                🔥 5,000+ Madurai Developers
               </span>
               <span className="px-4 py-2 rounded-full bg-white border border-[#D97706]/30 shadow-sm">
-                💡 Open Source AI Sprints
+                💡 100% Free & Open Source
               </span>
               <span className="px-4 py-2 rounded-full bg-white border border-[#D97706]/30 shadow-sm">
-                🤝 5,000+ Active Members
+                🚀 DevFest 2026 Ready
               </span>
             </div>
           </div>
