@@ -1,0 +1,39 @@
+steps:
+  # Step 0: Build container image using Dockerfile
+  - name: 'gcr.io/cloud-builders/docker'
+    args:
+      - 'build'
+      - '-t'
+      - 'gcr.io/$PROJECT_ID/diwali-openmadurai-gdg:$COMMIT_SHA'
+      - '-t'
+      - 'gcr.io/$PROJECT_ID/diwali-openmadurai-gdg:latest'
+      - '.'
+
+  # Step 1: Push image to container registry
+  - name: 'gcr.io/cloud-builders/docker'
+    args:
+      - 'push'
+      - 'gcr.io/$PROJECT_ID/diwali-openmadurai-gdg:latest'
+
+  # Step 2: Deploy to Cloud Run
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: gcloud
+    args:
+      - 'run'
+      - 'deploy'
+      - 'diwali-openmadurai-gdg'
+      - '--image'
+      - 'gcr.io/$PROJECT_ID/diwali-openmadurai-gdg:latest'
+      - '--region'
+      - 'asia-south1'
+      - '--platform'
+      - 'managed'
+      - '--allow-unauthenticated'
+      - '--port'
+      - '8080'
+
+images:
+  - 'gcr.io/$PROJECT_ID/diwali-openmadurai-gdg:latest'
+
+options:
+  logging: CLOUD_LOGGING_ONLY
