@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 180" fill="none">
+  <defs>
+    <!-- Terracotta Clay Diya Gradient -->
+    <linearGradient id="clayBodyGradUnlit" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D97706" />
+      <stop offset="35%" stop-color="#92400E" />
+      <stop offset="80%" stop-color="#78350F" />
+      <stop offset="100%" stop-color="#451A03" />
+    </linearGradient>
+
+    <!-- Diya Rim Highlight -->
+    <linearGradient id="rimGoldGradUnlit" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#78350F" />
+      <stop offset="25%" stop-color="#B45309" />
+      <stop offset="50%" stop-color="#F59E0B" />
+      <stop offset="75%" stop-color="#B45309" />
+      <stop offset="100%" stop-color="#78350F" />
+    </linearGradient>
+
+    <!-- Oil Pool Gradient -->
+    <radialGradient id="oilPoolUnlit" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#92400E" />
+      <stop offset="55%" stop-color="#78350F" />
+      <stop offset="100%" stop-color="#451A03" />
+    </radialGradient>
+  </defs>
+
+  <!-- Shadow Under Diya -->
+  <ellipse cx="100" cy="162" rx="65" ry="12" fill="#090A12" opacity="0.6" />
+
+  <!-- Diya Clay Base Shell -->
+  <path
+    d="M30 115 C 30 155, 170 155, 170 115 C 170 145, 150 162, 100 162 C 50 162, 30 145, 30 115 Z"
+    fill="url(#clayBodyGradUnlit)"
+    stroke="#D97706"
+    stroke-width="1.5"
+  />
+
+  <!-- Traditional Engraved Geometric Motifs -->
+  <path
+    d="M50 135 Q 100 152 150 135"
+    fill="none"
+    stroke="#D97706"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-dasharray="4 6"
+  />
+  <circle cx="70" cy="140" r="2.5" fill="#F59E0B" opacity="0.7" />
+  <circle cx="100" cy="144" r="3.5" fill="#F59E0B" opacity="0.7" />
+  <circle cx="130" cy="140" r="2.5" fill="#F59E0B" opacity="0.7" />
+
+  <!-- Diya Upper Oval Rim -->
+  <ellipse cx="100" cy="115" rx="70" ry="18" fill="url(#clayBodyGradUnlit)" stroke="url(#rimGoldGradUnlit)" stroke-width="2.5" />
+
+  <!-- Inside Oil Pool -->
+  <ellipse cx="100" cy="113" rx="55" ry="12" fill="url(#oilPoolUnlit)" />
+  <ellipse cx="100" cy="113" rx="42" ry="8" fill="#2E1065" opacity="0.2" />
+
+  <!-- Cotton Wick (Batti) Ready for Ignition -->
+  <path
+    d="M100 113 Q 102 98 100 82"
+    fill="none"
+    stroke="#374151"
+    stroke-width="4"
+    stroke-linecap="round"
+  />
+  <circle cx="100" cy="82" r="2" fill="#6B7280" />
+</svg>
+

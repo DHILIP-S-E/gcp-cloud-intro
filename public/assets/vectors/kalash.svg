@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 132" fill="none">
+  <defs>
+    <linearGradient id="potGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF1D6" />
+      <stop offset="35%" stop-color="#F5C76B" />
+      <stop offset="70%" stop-color="#D97706" />
+      <stop offset="100%" stop-color="#78350F" />
+    </linearGradient>
+    <linearGradient id="coconutGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8D6E63" />
+      <stop offset="100%" stop-color="#3E2723" />
+    </linearGradient>
+  </defs>
+
+  <!-- 5 Mango leaves -->
+  <path d="M60 55 C 30 45, 20 20, 25 10 C 35 25, 45 45, 60 55 Z" fill="#2E7D32" stroke="#81C784" stroke-width="0.8" />
+  <path d="M60 55 C 90 45, 100 20, 95 10 C 85 25, 75 45, 60 55 Z" fill="#2E7D32" stroke="#81C784" stroke-width="0.8" />
+  <path d="M60 55 C 45 35, 40 12, 45 4 C 52 20, 56 40, 60 55 Z" fill="#388E3C" stroke="#A5D6A7" stroke-width="0.8" />
+  <path d="M60 55 C 75 35, 80 12, 75 4 C 68 20, 64 40, 60 55 Z" fill="#388E3C" stroke="#A5D6A7" stroke-width="0.8" />
+  <path d="M60 55 C 56 30, 56 10, 60 0 C 64 10, 64 30, 60 55 Z" fill="#4CAF50" stroke="#C8E6C9" stroke-width="0.8" />
+
+  <!-- Coconut on Top -->
+  <ellipse cx="60" cy="40" rx="18" ry="22" fill="url(#coconutGrad)" stroke="#5D4037" stroke-width="1" />
+  <circle cx="60" cy="24" r="2" fill="#D7CCC8" />
+
+  <!-- Brass Pot Rim -->
+  <ellipse cx="60" cy="62" rx="26" ry="7" fill="url(#potGrad)" stroke="#FFF1D6" stroke-width="1" />
+
+  <!-- Golden Pot Belly -->
+  <path
+    d="M36 64 C 20 78, 20 108, 38 120 C 45 125, 75 125, 82 120 C 100 108, 100 78, 84 64 Z"
+    fill="url(#potGrad)"
+    stroke="#F5C76B"
+    stroke-width="1.5"
+  />
+
+  <!-- Sacred Red Mauli Thread Around Neck -->
+  <path d="M36 67 Q 60 74 84 67" stroke="#C73532" stroke-width="3" fill="none" />
+  <path d="M38 71 Q 60 78 82 71" stroke="#F5C76B" stroke-width="1.5" fill="none" />
+
+  <!-- Auspicious Kumkum Tilak -->
+  <circle cx="60" cy="94" r="7" fill="#C73532" />
+  <circle cx="60" cy="94" r="3" fill="#FFF1D6" />
+</svg>
+

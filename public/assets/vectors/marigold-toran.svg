@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 48" fill="none">
+  <defs>
+    <radialGradient id="marigoldGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFE082" />
+      <stop offset="50%" stop-color="#FF9D36" />
+      <stop offset="85%" stop-color="#E65100" />
+      <stop offset="100%" stop-color="#BF360C" />
+    </radialGradient>
+    <linearGradient id="mangoLeafGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4CAF50" />
+      <stop offset="100%" stop-color="#1B5E20" />
+    </linearGradient>
+  </defs>
+
+  <!-- Auspicious Red & Gold Thread -->
+  <path
+    d="M0 8 Q 150 28 300 8 Q 450 28 600 8 Q 750 28 900 8 Q 1050 28 1200 8"
+    stroke="#C73532"
+    stroke-width="3"
+    fill="none"
+  />
+  <path
+    d="M0 8 Q 150 28 300 8 Q 450 28 600 8 Q 750 28 900 8 Q 1050 28 1200 8"
+    stroke="#F5C76B"
+    stroke-width="1.5"
+    stroke-dasharray="4 6"
+    fill="none"
+  />
+
+  <!-- Repeating Marigolds and Mango leaves -->
+  <g id="flowerUnits">
+    <g transform="translate(40, 16)"><circle cx="0" cy="0" r="10" fill="url(#marigoldGrad)"/><circle cx="0" cy="0" r="4" fill="#FFE082"/><path d="M0 0 C -4 10, -3 20, 0 28 C 3 20, 4 10, 0 0 Z" fill="url(#mangoLeafGrad)"/></g>
+    <g transform="translate(120, 22)"><circle cx="0" cy="0" r="10" fill="url(#marigoldGrad)"/><circle cx="0" cy="0" r="4" fill="#FFE082"/><path d="M0 0 C -4 10, -3 20, 0 28 C 3 20, 4 10, 0 0 Z" fill="url(#mangoLeafGrad)"/></g>
+    <g transform="translate(200, 22)"><circle cx="0" cy="0" r="10" fill="url(#marigoldGrad)"/><circle cx="0" cy="0" r="4" fill="#FFE082"/><path d="M0 0 C -4 10, -3 20, 0 28 C 3 20, 4 10, 0 0 Z" fill="url(#mangoLeafGrad)"/></g>
+    <g transform="translate(280, 16)"><circle cx="0" cy="0" r="10" fill="url(#marigoldGrad)"/><circle cx="0" cy="0" r="4" fill="#FFE082"/><path d="M0 0 C -4 10, -3 20, 0 28 C 3 20, 4 10, 0 0 Z" fill="url(#mangoLeafGrad)"/></g>
+    <g transform="translate(360, 22)"><circle cx="0" cy="0" r="10" fill="url(#marigoldGrad)"/><circle cx="0" cy="0" r="4" fill="#FFE082"/><path d="M0 0 C -4 10, -3 20, 0 28 C 3 20, 4 10, 0 0 Z" fill="url(#mangoLeafGrad)"/></g>
+    <g transform="translate(440, 22)"><circle cx="0" cy="0" r="10" fill="url(#marigoldGrad)"/><circle cx="0" cy="0" r="4" fill="#FFE082"/><path d="M0 0 C -4 10, -3 20, 0 28 C 3 20, 4 10, 0 0 Z" fill="url(#mangoLeafGrad)"/></g>
+    <g transform="translate(520, 16)"><circle cx="0" cy="0" r="10" fill="url(#marigoldGrad)"/><circle cx="0" cy="0" r="4" fill="#FFE082"/><path d="M0 0 C -4 10, -3 20, 0 28 C 3 20, 4 10, 0 0 Z" fill="url(#mangoLeafGrad)"/></g>
+    <g transform="translate(600, 12)"><circle cx="0" cy="0" r="11" fill="url(#marigoldGrad)"/><circle cx="0" cy="0" r="4.5" fill="#FFE082"/><path d="M0 0 C -4 10, -3 20, 0 28 C 3 20, 4 10, 0 0 Z" fill="url(#mangoLeafGrad)"/></g>
+    <g transform="translate(680, 16)"><circle cx="0" cy="0" r="10" fill="url(#marigoldGrad)"/><circle cx="0" cy="0" r="4" fill="#FFE082"/><path d="M0 0 C -4 10, -3 20, 0 28 C 3 20, 4 10, 0 0 Z" fill="url(#mangoLeafGrad)"/></g>
+    <g transform="translate(760, 22)"><circle cx="0" cy="0" r="10" fill="url(#marigoldGrad)"/><circle cx="0" cy="0" r="4" fill="#FFE082"/><path d="M0 0 C -4 10, -3 20, 0 28 C 3 20, 4 10, 0 0 Z" fill="url(#mangoLeafGrad)"/></g>
+    <g transform="translate(840, 22)"><circle cx="0" cy="0" r="10" fill="url(#marigoldGrad)"/><circle cx="0" cy="0" r="4" fill="#FFE082"/><path d="M0 0 C -4 10, -3 20, 0 28 C 3 20, 4 10, 0 0 Z" fill="url(#mangoLeafGrad)"/></g>
+    <g transform="translate(920, 16)"><circle cx="0" cy="0" r="10" fill="url(#marigoldGrad)"/><circle cx="0" cy="0" r="4" fill="#FFE082"/><path d="M0 0 C -4 10, -3 20, 0 28 C 3 20, 4 10, 0 0 Z" fill="url(#mangoLeafGrad)"/></g>
+    <g transform="translate(1000, 22)"><circle cx="0" cy="0" r="10" fill="url(#marigoldGrad)"/><circle cx="0" cy="0" r="4" fill="#FFE082"/><path d="M0 0 C -4 10, -3 20, 0 28 C 3 20, 4 10, 0 0 Z" fill="url(#mangoLeafGrad)"/></g>
+    <g transform="translate(1080, 22)"><circle cx="0" cy="0" r="10" fill="url(#marigoldGrad)"/><circle cx="0" cy="0" r="4" fill="#FFE082"/><path d="M0 0 C -4 10, -3 20, 0 28 C 3 20, 4 10, 0 0 Z" fill="url(#mangoLeafGrad)"/></g>
+    <g transform="translate(1160, 16)"><circle cx="0" cy="0" r="10" fill="url(#marigoldGrad)"/><circle cx="0" cy="0" r="4" fill="#FFE082"/><path d="M0 0 C -4 10, -3 20, 0 28 C 3 20, 4 10, 0 0 Z" fill="url(#mangoLeafGrad)"/></g>
+  </g>
+</svg>
+

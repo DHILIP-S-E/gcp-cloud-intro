@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 184" fill="none">
+  <defs>
+    <linearGradient id="gopuramGold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF1D6" />
+      <stop offset="30%" stop-color="#F5C76B" />
+      <stop offset="70%" stop-color="#FF9D36" />
+      <stop offset="100%" stop-color="#C73532" />
+    </linearGradient>
+    <linearGradient id="circuitGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4285F4" />
+      <stop offset="50%" stop-color="#34A853" />
+      <stop offset="100%" stop-color="#FBBC04" />
+    </linearGradient>
+  </defs>
+
+  <!-- Base Foundation -->
+  <rect x="25" y="160" width="110" height="16" rx="2" fill="url(#gopuramGold)" opacity="0.9" />
+  <rect x="35" y="148" width="90" height="12" rx="1.5" fill="#C73532" opacity="0.8" />
+  
+  <!-- Entrance Gate Arch (Torana) -->
+  <path d="M70 176 L70 148 Q80 140 90 148 L90 176 Z" fill="#090A12" stroke="#F5C76B" stroke-width="1.5" />
+  <ellipse cx="80" cy="147" rx="3" ry="3" fill="#FFF1D6" />
+
+  <!-- Tier 1 (Lowest Broad Tier) -->
+  <polygon points="40,148 45,128 115,128 120,148" fill="url(#gopuramGold)" stroke="#FFF1D6" stroke-width="1" />
+  <line x1="50" y1="138" x2="110" y2="138" stroke="#090A12" stroke-width="1.5" stroke-dasharray="3 3" />
+
+  <!-- Tier 2 -->
+  <polygon points="46,128 50,110 110,110 114,128" fill="#F5C76B" stroke="#FF9D36" stroke-width="1" />
+  <line x1="56" y1="119" x2="104" y2="119" stroke="#78350F" stroke-width="1" stroke-dasharray="2 2" />
+
+  <!-- Tier 3 -->
+  <polygon points="51,110 55,94 105,94 109,110" fill="url(#gopuramGold)" stroke="#FFF1D6" stroke-width="0.8" />
+
+  <!-- Tier 4 -->
+  <polygon points="56,94 60,80 100,80 104,94" fill="#F5C76B" stroke="#C73532" stroke-width="0.8" />
+
+  <!-- Tier 5 -->
+  <polygon points="61,80 65,68 95,68 99,80" fill="url(#gopuramGold)" stroke="#FFF1D6" stroke-width="0.8" />
+
+  <!-- Tier 6 -->
+  <polygon points="66,68 70,58 90,58 94,68" fill="#FF9D36" stroke="#F5C76B" stroke-width="0.8" />
+
+  <!-- Top Shikara Crown -->
+  <path d="M68 58 Q80 44 92 58 Z" fill="#F5C76B" stroke="#FFF1D6" stroke-width="1" />
+
+  <!-- Golden Kalasams (Auspicious Finials atop temple) -->
+  <g fill="#FFF1D6">
+    <circle cx="74" cy="42" r="2.5" />
+    <line x1="74" y1="42" x2="74" y2="48" stroke="#FFF1D6" stroke-width="1" />
+    
+    <circle cx="80" cy="38" r="3.5" />
+    <line x1="80" y1="38" x2="80" y2="46" stroke="#FFF1D6" stroke-width="1.5" />
+    
+    <circle cx="86" cy="42" r="2.5" />
+    <line x1="86" y1="42" x2="86" y2="48" stroke="#FFF1D6" stroke-width="1" />
+  </g>
+
+  <!-- Circuit AI Tech Ring overlay (symbolizing AI + Madurai Heritage) -->
+  <circle cx="80" cy="100" r="66" stroke="url(#circuitGlow)" stroke-width="1.5" stroke-dasharray="6 8" opacity="0.75" />
+  <circle cx="80" cy="34" r="2.5" fill="#4285F4" />
+  <circle cx="146" cy="100" r="2.5" fill="#34A853" />
+  <circle cx="80" cy="166" r="2.5" fill="#FBBC04" />
+  <circle cx="14" cy="100" r="2.5" fill="#EA4335" />
+</svg>
+

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <radialGradient id="flameGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF5C2"/>
+      <stop offset="40%" stop-color="#FF9D36"/>
+      <stop offset="80%" stop-color="#F47B20"/>
+      <stop offset="100%" stop-color="#C73532" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="clayGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5C76B"/>
+      <stop offset="50%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#78350F"/>
+    </linearGradient>
+  </defs>
+  <!-- Base Clay Diya -->
+  <ellipse cx="32" cy="52" rx="20" ry="4" fill="#090A12" opacity="0.4"/>
+  <path d="M12 38 C 12 50, 52 50, 52 38 C 52 40, 48 48, 32 48 C 16 48, 12 40, 12 38 Z" fill="url(#clayGrad)"/>
+  <ellipse cx="32" cy="38" rx="20" ry="6" fill="#B45309" stroke="#F5C76B" stroke-width="1.5"/>
+  <ellipse cx="32" cy="37" rx="16" ry="4" fill="#78350F"/>
+  <!-- Diya Wick & Flame -->
+  <path d="M32 37 Q 32 20 32 10 Q 30 22 26 28 Q 23 34 32 37 Z" fill="url(#flameGlow)"/>
+  <path d="M32 36 Q 32 24 32 16 Q 30 24 28 28 Q 27 32 32 36 Z" fill="#FFFBEB"/>
+  <circle cx="32" cy="22" r="14" fill="url(#flameGlow)" opacity="0.4"/>
+</svg>

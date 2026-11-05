@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 180" fill="none">
+  <defs>
+    <!-- Flame Radial Gradient -->
+    <radialGradient id="flameInnerGrad" cx="50%" cy="80%" r="70%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="25%" stop-color="#FFF5C2" />
+      <stop offset="60%" stop-color="#FF9D36" />
+      <stop offset="90%" stop-color="#F47B20" />
+      <stop offset="100%" stop-color="#C73532" />
+    </radialGradient>
+
+    <!-- Flame Core Blue Base -->
+    <radialGradient id="flameBlueCore" cx="50%" cy="85%" r="35%">
+      <stop offset="0%" stop-color="#60A5FA" stop-opacity="0.9" />
+      <stop offset="60%" stop-color="#3B82F6" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#1E3A8A" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Terracotta Clay Diya Gradient -->
+    <linearGradient id="clayBodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5C76B" />
+      <stop offset="25%" stop-color="#D97706" />
+      <stop offset="70%" stop-color="#92400E" />
+      <stop offset="100%" stop-color="#451A03" />
+    </linearGradient>
+
+    <!-- Diya Rim Highlight -->
+    <linearGradient id="rimGoldGrad" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#78350F" />
+      <stop offset="20%" stop-color="#F5C76B" />
+      <stop offset="50%" stop-color="#FFF1D6" />
+      <stop offset="80%" stop-color="#F5C76B" />
+      <stop offset="100%" stop-color="#78350F" />
+    </linearGradient>
+
+    <!-- Oil Pool Gradient -->
+    <radialGradient id="oilPool" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#FEF08A" />
+      <stop offset="45%" stop-color="#D97706" />
+      <stop offset="90%" stop-color="#78350F" />
+    </radialGradient>
+
+    <!-- Ambient Aura Glow -->
+    <radialGradient id="auraGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FF9D36" stop-opacity="0.45" />
+      <stop offset="50%" stop-color="#F5C76B" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#C73532" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Ambient Glow Behind Flame -->
+  <circle cx="100" cy="55" r="50" fill="url(#auraGlow)" />
+
+  <!-- Shadow Under Diya -->
+  <ellipse cx="100" cy="162" rx="65" ry="12" fill="#090A12" opacity="0.6" />
+
+  <!-- Radiating Light Rays -->
+  <g opacity="0.5">
+    <line x1="100" y1="35" x2="100" y2="10" stroke="#F5C76B" stroke-width="2" stroke-dasharray="3 4" stroke-linecap="round" />
+    <line x1="75" y1="42" x2="55" y2="22" stroke="#F5C76B" stroke-width="2" stroke-dasharray="3 4" stroke-linecap="round" />
+    <line x1="125" y1="42" x2="145" y2="22" stroke="#F5C76B" stroke-width="2" stroke-dasharray="3 4" stroke-linecap="round" />
+    <line x1="58" y1="65" x2="35" y2="52" stroke="#F5C76B" stroke-width="2" stroke-dasharray="3 4" stroke-linecap="round" />
+    <line x1="142" y1="65" x2="165" y2="52" stroke="#F5C76B" stroke-width="2" stroke-dasharray="3 4" stroke-linecap="round" />
+  </g>
+
+  <!-- Diya Clay Base Shell -->
+  <path
+    d="M30 115 C 30 155, 170 155, 170 115 C 170 145, 150 162, 100 162 C 50 162, 30 145, 30 115 Z"
+    fill="url(#clayBodyGrad)"
+    stroke="#F5C76B"
+    stroke-width="1.5"
+  />
+
+  <!-- Traditional Engraved Geometric Motifs -->
+  <path
+    d="M50 135 Q 100 152 150 135"
+    fill="none"
+    stroke="#F5C76B"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-dasharray="4 6"
+  />
+  <circle cx="70" cy="140" r="2.5" fill="#FFF1D6" />
+  <circle cx="100" cy="144" r="3.5" fill="#FFF1D6" />
+  <circle cx="130" cy="140" r="2.5" fill="#FFF1D6" />
+
+  <!-- Diya Upper Oval Rim -->
+  <ellipse cx="100" cy="115" rx="70" ry="18" fill="url(#clayBodyGrad)" stroke="url(#rimGoldGrad)" stroke-width="2.5" />
+
+  <!-- Inside Oil Pool -->
+  <ellipse cx="100" cy="113" rx="55" ry="12" fill="url(#oilPool)" />
+  <ellipse cx="100" cy="113" rx="42" ry="8" fill="#451A03" opacity="0.4" />
+
+  <!-- Cotton Wick (Batti) -->
+  <path
+    d="M100 113 Q 102 98 100 82"
+    fill="none"
+    stroke="#1F2937"
+    stroke-width="4"
+    stroke-linecap="round"
+  />
+  <circle cx="100" cy="82" r="2" fill="#F97316" />
+
+  <!-- Vibrant Multi-layer Flame -->
+  <!-- Outer Teardrop Flame -->
+  <path
+    d="M100 85 C 84 85, 78 62, 95 35 C 99 22, 100 10, 100 10 C 100 10, 101 22, 105 35 C 122 62, 116 85, 100 85 Z"
+    fill="url(#flameInnerGrad)"
+  />
+
+  <!-- Inner Golden White Core -->
+  <path
+    d="M100 85 C 90 85, 87 70, 97 50 C 99 42, 100 32, 100 32 C 100 32, 101 42, 103 50 C 113 70, 110 85, 100 85 Z"
+    fill="#FFFBEB"
+    opacity="0.95"
+  />
+
+  <!-- Blue base core of real flame -->
+  <ellipse cx="100" cy="80" rx="9" ry="5" fill="url(#flameBlueCore)" />
+
+  <!-- Rising Spark Particles -->
+  <circle cx="101" cy="22" r="1.5" fill="#FFF1D6" />
+  <circle cx="97" cy="14" r="1.2" fill="#FFD269" />
+</svg>
+
