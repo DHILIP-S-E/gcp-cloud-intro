@@ -89,7 +89,7 @@ export const DiwaliHero: React.FC<DiwaliHeroProps> = ({
           transition={{ duration: 0.9, delay: 0.4 }}
           className="text-base sm:text-lg md:text-xl text-[#5C4A3E] font-serif italic max-w-2xl mx-auto leading-relaxed mt-2"
         >
-          "From late-night chai stalls near Madurai station to midnight coding sprints at TCE and KLN — we don't just build software. We build hope, brotherhood, and a world-class AI future right from our hometown."
+          "From late-night chai stalls near Madurai station to midnight coding marathons across local hack spaces — we don't just build software. We build hope, brotherhood, and a world-class AI future right from our hometown."
         </motion.p>
 
         {/* The Central Iconic Diya Card */}
